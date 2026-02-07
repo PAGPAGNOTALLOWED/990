@@ -50,6 +50,8 @@ WHITELIST_WORDS = [
     "ghost writer", "ghosting", "ghostly", "ghosted", "past", "paste", "pasted"
 ]
 
+
+
 # === AUTO-REPLY PATTERNS ===
 
 AUTO_REPLY_PATTERNS = {
@@ -66,11 +68,11 @@ AUTO_REPLY_PATTERNS = {
         'description': 'Script location'
     },
     r'(?i)(?:where|how)\s+(?:to\s+get|can\s+i\s+get|do\s+i\s+get)\s+(?:a\s+)?key': {
-        'response': "Please read https://discord.com/channels/1350403770986528779/1390636325752934430 to get your key, or you can buy a premium key at https://discord.com/channels/1350403770986528779/1423933307137163274 🔑",
+        'response': "Please read https://discord.com/channels/1453057495034495069/1453069855787061369 to get your key, or you can buy a premium key at https://discord.com/channels/1453057495034495069/1453066695022477617 🔑",
         'description': 'Key acquisition guide'
     },
     r'(?i)(?:where|how)\s+(?:to\s+buy|can\s+i\s+buy)\s+(?:premium\s+)?key': {
-        'response': "You can buy a premium key at https://discord.com/channels/1350403770986528779/1423933307137163274 💎",
+        'response': "You can buy a premium key at https://discord.com/channels/1453057495034495069/1453066695022477617 💎",
         'description': 'Premium key purchase'
     },
     r'(?i)why\s+(?:is\s+)?my\s+key\s+(?:not\s+working|broken|invalid)': {
@@ -82,7 +84,6 @@ AUTO_REPLY_PATTERNS = {
         'description': 'Script access'
     }
 }
-
 # === COMPREHENSIVE UNICODE DETECTION ===
 
 def comprehensive_unicode_to_ascii(text):
@@ -1146,6 +1147,7 @@ if __name__ == "__main__":
         print("❌ Invalid bot token!")
     except Exception as e:
         print(f"❌ Failed to start bot: {e}")
+
 
 
 
